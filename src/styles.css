@@ -1,1 +1,154 @@
-/* You can add global styles to this file, and also import other style files */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ::-webkit-scrollbar {
+    height: .5rem;
+    width: .5rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: cyan;
+    border-radius: 5rem;
+  }
+
+  /* Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: cyan black;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #333;
+  }
+  
+  header {
+    background-color: black;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 1em;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 800px;
+    border: .5px solid cyan;
+    background: black;
+    border-radius: 10px;
+  }
+
+  h2, h3 {
+    color: cyan;
+  }
+
+  p {
+    color: white;
+  }
+
+  section a {
+    display: flex;
+    border: .5px solid cyan;
+    box-sizing: border-box;
+    color: white;
+    padding: 2px;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 9.5px;
+  }
+
+  span {
+    display: flex;
+    color: white;
+    margin-left: 180px;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 7.5px;
+    padding-left: 9.6%;
+  }
+  
+  @media (max-width: 420px) {
+    /* Adjusting padding and margins for smaller screens */
+    section {
+      padding: 1em;
+      margin: 0.5em auto;
+      max-width: 100%;
+      margin: 2%;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+    }
+  
+    header {
+      padding: 0.5em 0;
+      margin-bottom: 30px;
+    }
+  
+    header nav ul li {
+      display: flex;
+      margin: 0.5em 0;
+      justify-content: column;
+      padding-left: 10px;
+    }
+  
+    /* Adjusting links and span elements */
+    section a {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  
+    span {
+      margin-left: 0;
+      width: 100%;
+      padding-left: 0;
+      height: auto;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    /* Adjusting font size and line height for better readability */
+    body {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+    h2, h3 {
+      font-size: 1.2em;
+    }
+  }
+  
